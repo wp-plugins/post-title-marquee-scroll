@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wo
 Plugin URI: http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/
 Tags: post, title, marquee, scroll
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 7.0
+Tested up to: 3.5
+Stable tag: 7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -80,6 +80,9 @@ New demo link, www.gopiplus.com
 = 7.0 =
 Slight changes in the short code.
 
+= 7.1 =
+Tested upto 3.5
+
 == Upgrade Notice ==
 
 = 1.0 =							
@@ -102,3 +105,6 @@ New demo link, www.gopiplus.com
 
 = 7.0 =
 Slight changes in the short code.
+
+= 7.1 =
+Tested upto 3.5
