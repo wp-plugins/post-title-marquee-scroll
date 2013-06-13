@@ -4,7 +4,7 @@
 Plugin Name: Post title marquee scroll
 Description: Post title marquee scroll is a simple wordpress plugin to create the marquee scroll in the website with post title. In the admin we have option to choose the category and display order. We can add this plugin directly in the theme files. Also we have widget and short code option.
 Author: Gopi.R
-Version: 7.1
+Version: 8.0
 Plugin URI: http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/
@@ -209,8 +209,15 @@ function ptms_deactivation()
 function ptms_option() 
 {
 	global $wpdb;
-	echo '<h2>Post title marquee scroll</h2>';
-	
+	?>
+	<div class="wrap">
+	  <div class="form-wrap">
+		<div id="icon-edit" class="icon32 icon32-posts-post"><br>
+		</div>
+		<h2>Post title marquee scroll</h2>
+		<h3>Plugin setting</h3>
+	<?php
+
 	$ptms_title = get_option('ptms_title');
 	
 	$ptms_scrollamount = get_option('ptms_scrollamount');
@@ -226,6 +233,9 @@ function ptms_option()
 	
 	if (@$_POST['ptms_submit']) 
 	{
+		//	Just security thingy that wordpress offers us
+		check_admin_referer('ptms_form_setting');
+		
 		$ptms_title = stripslashes($_POST['ptms_title']);
 		
 		$ptms_scrollamount = stripslashes($_POST['ptms_scrollamount']);
@@ -255,49 +265,49 @@ function ptms_option()
 	
 	echo '<form name="ptms_form" method="post" action="">';
 	
-	echo '<p>Title :<br><input  style="width: 250px;" type="text" value="';
-	echo $ptms_title . '" name="ptms_title" id="ptms_title" /></p>';
+	echo '<label for="tag-title">Title :</label><input  style="width: 250px;" type="text" value="';
+	echo $ptms_title . '" name="ptms_title" id="ptms_title" /><p></p>';
 	
-	echo '<p>Scroll amount :<br><input  style="width: 100px;" type="text" value="';
-	echo $ptms_scrollamount . '" name="ptms_scrollamount" id="ptms_scrollamount" /></p>';
+	echo '<label for="tag-title">Scroll amount :</label><input  style="width: 100px;" type="text" value="';
+	echo $ptms_scrollamount . '" name="ptms_scrollamount" id="ptms_scrollamount" /><p></p>';
 	
-	echo '<p>Scroll delay :<br><input  style="width: 100px;" type="text" value="';
-	echo $ptms_scrolldelay . '" name="ptms_scrolldelay" id="ptms_scrolldelay" /></p>';
+	echo '<label for="tag-title">Scroll delay :</label><input  style="width: 100px;" type="text" value="';
+	echo $ptms_scrolldelay . '" name="ptms_scrolldelay" id="ptms_scrolldelay" /><p></p>';
 	
-	echo '<p>Scroll direction :<br><input  style="width: 100px;" type="text" value="';
-	echo $ptms_direction . '" name="ptms_direction" id="ptms_direction" /> (Left/Right)</p>';
+	echo '<label for="tag-title">Scroll direction :</label><input  style="width: 100px;" type="text" value="';
+	echo $ptms_direction . '" name="ptms_direction" id="ptms_direction" /><p>Enter: Left (or) Right</p>';
 	
-	echo '<p>Scroll style :<br><input  style="width: 250px;" type="text" value="';
-	echo $ptms_style . '" name="ptms_style" id="ptms_style" /></p>';
+	echo '<label for="tag-title">Scroll style :</label><input  style="width: 250px;" type="text" value="';
+	echo $ptms_style . '" name="ptms_style" id="ptms_style" /><p></p>';
 	
-	echo '<p>Spliter :<br><input  style="width: 100px;" type="text" value="';
-	echo $ptms_spliter . '" name="ptms_spliter" id="ptms_spliter" /></p>';
+	echo '<label for="tag-title">Spliter :</label><input  style="width: 100px;" type="text" value="';
+	echo $ptms_spliter . '" name="ptms_spliter" id="ptms_spliter" /><p></p>';
 	
-	echo '<p>Number of post :<br><input  style="width: 100px;" type="text" value="';
-	echo $ptms_noofpost . '" name="ptms_noofpost" id="ptms_noofpost" /></p>';
+	echo '<label for="tag-title">Number of post :</label><input  style="width: 100px;" type="text" value="';
+	echo $ptms_noofpost . '" name="ptms_noofpost" id="ptms_noofpost" /><p></p>';
 	
-	echo '<p>Post categories :<br><input  style="width: 200px;" type="text" value="';
-	echo $ptms_categories . '" name="ptms_categories" id="ptms_categories" /> (Example: 1, 3, 4) <br> Category IDs, separated by commas.</p>';
+	echo '<label for="tag-title">Post categories :</label><input  style="width: 200px;" type="text" value="';
+	echo $ptms_categories . '" name="ptms_categories" id="ptms_categories" /><p>Category IDs, separated by commas. (Example: 1, 3, 4) </p>';
 	
-	echo '<p>Post orderbys :<br><input  style="width: 200px;" type="text" value="';
-	echo $ptms_orderbys . '" name="ptms_orderbys" id="ptms_orderbys" /> (Any 1 from below list) <br> ID/author/title/rand/date/category/modified</p>';
+	echo '<label for="tag-title">Post orderbys :</label><input  style="width: 200px;" type="text" value="';
+	echo $ptms_orderbys . '" name="ptms_orderbys" id="ptms_orderbys" /><p>Any 1 from this list: ID (or) author (or) title (or) rand (or) date (or) category (or) modified</p>';
 	
-	echo '<p>Post order : <br><input  style="width: 100px;" type="text" value="';
-	echo $ptms_order . '" name="ptms_order" id="ptms_order" /> ASC/DESC </p>';
+	echo '<label for="tag-title">Post order :</label><input  style="width: 100px;" type="text" value="';
+	echo $ptms_order . '" name="ptms_order" id="ptms_order" /><p>Enter: ASC (or) DESC</p>';
 	
-	echo '<input name="ptms_submit" id="ptms_submit" lang="publish" class="button-primary" value="Update" type="Submit" />';
+	echo '<br/><input name="ptms_submit" id="ptms_submit" lang="publish" class="button-primary" value="Update Setting" type="Submit" />';
+	wp_nonce_field('ptms_form_setting');
 	echo '</form>';
 	?>
-    <h2>Plugin configuration help</h2>
-    <ul>
-    	<li>Drag and drop the widget</a></li>
-        <li>Short code for posts and pages</a></li>
-        <li>Add directly in the theme</li>
-    </ul>
-    <h2>Check official website</h2>
-    <ul>
-    	<li>Check official website for more info <a href="http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/" target="_blank">Click here</a></li>
-    </ul>
+    <h3>Plugin configuration help</h3>
+    <ol>
+		<li>Drag and drop the widget.</li>
+		<li>Add the plugin in the posts or pages using short code.</li>
+		<li>Add directly in to the theme using PHP code.</li>
+    </ol>
+    <p class="description">Check official website for more info <a href="http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/" target="_blank">Click here</a></p>
+    </div>
+</div>
     <?php
 }
 
