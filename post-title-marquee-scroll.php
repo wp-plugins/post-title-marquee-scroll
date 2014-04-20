@@ -2,8 +2,8 @@
 /*
 Plugin Name: Post title marquee scroll
 Description: Post title marquee scroll is a simple wordpress plugin to create the marquee scroll in the website with post title. In the admin we have option to choose the category and display order. We can add this plugin directly in the theme files. Also we have widget and short code option.
-Author: Gopi.R
-Version: 8.1
+Author: Gopi Ramasamy
+Version: 8.2
 Plugin URI: http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/
 Author URI: http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/
@@ -203,8 +203,7 @@ function ptms_widget_init()
 	
 	if(function_exists('wp_register_widget_control')) 
 	{
-		wp_register_widget_control(__('Post title marquee scroll', 'post-title-marquee'), 
-					array(__('Post title marquee scroll', 'post-title-marquee'), 'widgets'), 'ptms_control');
+		wp_register_widget_control('post-title-marquee-scroll', array(__('Post title marquee scroll', 'post-title-marquee'), 'widgets'), 'ptms_control');
 	} 
 }
 
