@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wo
 Plugin URI: http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/
 Tags: post, title, marquee, scroll
 Requires at least: 3.4
-Tested up to: 3.9
-Stable tag: 8.2
+Tested up to: 4.0
+Stable tag: 8.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -45,8 +45,6 @@ Post title marquee scroll is a simple wordpress plugin to create the marquee scr
 	
 == Installation ==
 
-**Installation Instruction & Configuration**  
-
 [See Installation Instruction and Configuration information and Demo](http://www.gopiplus.com/work/2011/08/08/post-title-marquee-scroll-wordpress-plugin/)	   
 
 == Frequently Asked Questions ==
@@ -61,76 +59,106 @@ Post title marquee scroll is a simple wordpress plugin to create the marquee scr
 
 == Changelog ==
 
-= 1.0 =							
+= 1.0 =		
+					
 First version.
 
-= 2.0 =							
+= 2.0 =	
+						
 Small short code bug fixed.
 
 = 3.0 =
+
 Tested upto 3.3			
 
 = 4.0 =
+
 Reset Query issue has been fixed.
 
 = 5.0 =
+
 Tested upto 3.4
 
 = 6.0 =
+
 New demo link, www.gopiplus.com
 
 = 7.0 =
+
 Slight changes in the short code.
 
 = 7.1 =
+
 Tested upto 3.5
 
 = 8.0 =
+
 Tested up to 3.6
 Added some security feature.
 
 = 8.1 =
+
 1. Tested up to 3.8
 2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
 Plugin *.po file (post-title-marquee.po) available in the languages folder.
 
 = 8.2 =
+
 1. Tested up to 3.9
+
+= 8.3 =
+
+1. Tested up to 4.0
 
 == Upgrade Notice ==
 
-= 1.0 =							
+= 1.0 =	
+						
 First version.
 
-= 2.0 =							
+= 2.0 =	
+						
 Small short code bug fixed.
 
 = 3.0 =
+
 Tested upto 3.3			
 
 = 4.0 =
+
 Reset Query issue has been fixed.
 
 = 5.0 =
+
 Tested upto 3.4
 
 = 6.0 =
+
 New demo link, www.gopiplus.com
 
 = 7.0 =
+
 Slight changes in the short code.
 
 = 7.1 =
+
 Tested upto 3.5
 
 = 8.0 =
+
 Tested up to 3.6
 Added some security feature.
 
 = 8.1 =
+
 1. Tested up to 3.8
 2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
 Plugin *.po file (post-title-marquee.po) available in the languages folder.
 
 = 8.2 =
+
 1. Tested up to 3.9
+
+= 8.3 =
+
+1. Tested up to 4.0

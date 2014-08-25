@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Post title marquee scroll 8.1\n"
-"POT-Creation-Date: 2014-02-01 00:09+0800\n"
-"PO-Revision-Date: 2014-02-01 00:09+0800\n"
+"POT-Creation-Date: 2014-08-05 22:54+0800\n"
+"PO-Revision-Date: 2014-08-05 22:54+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,89 +13,92 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../post-title-marquee-scroll.php:191 ../post-title-marquee-scroll.php:201
-#: ../post-title-marquee-scroll.php:206 ../post-title-marquee-scroll.php:207
-#: ../post-title-marquee-scroll.php:224 ../post-title-marquee-scroll.php:323
-#: ../post-title-marquee-scroll.php:324
+#: ../post-title-marquee-scroll.php:189 ../post-title-marquee-scroll.php:199
+#: ../post-title-marquee-scroll.php:204 ../post-title-marquee-scroll.php:221
+#: ../post-title-marquee-scroll.php:326 ../post-title-marquee-scroll.php:327
 msgid "Post title marquee scroll"
 msgstr ""
 
-#: ../post-title-marquee-scroll.php:193
+#: ../post-title-marquee-scroll.php:191
 msgid "Check official website for more information"
 msgstr ""
 
-#: ../post-title-marquee-scroll.php:194
+#: ../post-title-marquee-scroll.php:192
 msgid "click here"
 msgstr ""
 
-#: ../post-title-marquee-scroll.php:225
+#: ../post-title-marquee-scroll.php:222
 msgid "Plugin setting"
 msgstr ""
 
-#: ../post-title-marquee-scroll.php:274
-msgid "Title :"
+#: ../post-title-marquee-scroll.php:270
+msgid "Details successfully updated."
 msgstr ""
 
 #: ../post-title-marquee-scroll.php:277
-msgid "Scroll amount :"
+msgid "Title :"
 msgstr ""
 
 #: ../post-title-marquee-scroll.php:280
-msgid "Scroll delay :"
+msgid "Scroll amount :"
 msgstr ""
 
 #: ../post-title-marquee-scroll.php:283
-msgid "Scroll direction :"
+msgid "Scroll delay :"
 msgstr ""
 
 #: ../post-title-marquee-scroll.php:286
-msgid "Scroll style :"
+msgid "Scroll direction :"
 msgstr ""
 
 #: ../post-title-marquee-scroll.php:289
-msgid "Spliter :"
+msgid "Scroll style :"
 msgstr ""
 
 #: ../post-title-marquee-scroll.php:292
-msgid "Number of post :"
+msgid "Spliter :"
 msgstr ""
 
 #: ../post-title-marquee-scroll.php:295
-msgid "Post categories :"
+msgid "Number of post :"
 msgstr ""
 
 #: ../post-title-marquee-scroll.php:298
-msgid "Post orderbys :"
+msgid "Post categories :"
 msgstr ""
 
 #: ../post-title-marquee-scroll.php:301
-msgid "Post order :"
+msgid "Post orderbys :"
 msgstr ""
 
 #: ../post-title-marquee-scroll.php:304
+msgid "Post order :"
+msgstr ""
+
+#: ../post-title-marquee-scroll.php:307
 msgid "Update Setting"
 msgstr ""
 
-#: ../post-title-marquee-scroll.php:308
+#: ../post-title-marquee-scroll.php:311
 msgid "Plugin configuration help"
 msgstr ""
 
-#: ../post-title-marquee-scroll.php:310
+#: ../post-title-marquee-scroll.php:313
 msgid "Drag and drop the widget."
 msgstr ""
 
-#: ../post-title-marquee-scroll.php:311
+#: ../post-title-marquee-scroll.php:314
 msgid "Add the plugin in the posts or pages using short code."
 msgstr ""
 
-#: ../post-title-marquee-scroll.php:312
+#: ../post-title-marquee-scroll.php:315
 msgid "Add directly in to the theme using PHP code."
 msgstr ""
 
-#: ../post-title-marquee-scroll.php:314
+#: ../post-title-marquee-scroll.php:317
 msgid "Check official website for more info"
 msgstr ""
 
-#: ../post-title-marquee-scroll.php:315
+#: ../post-title-marquee-scroll.php:318
 msgid "Click here"
 msgstr ""
